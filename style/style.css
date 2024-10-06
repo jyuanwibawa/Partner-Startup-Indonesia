@@ -1,0 +1,424 @@
+.header {
+    text-align: center;
+   margin-top: 10px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+
+}
+
+.header p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.klik-disini {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #585858;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.klik-disini:hover {
+    background-color: #333333;
+
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto; /* Pusatkan kontainer */
+    padding: 20px; /* Tambahkan padding */
+}
+
+.card {
+    position: relative;
+    flex: 1 1 calc(50% - 20px); /* 2 kartu per baris di desktop */
+    max-width: calc(50% - 20px);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(5, 9, 9, 0.578);
+    color: white;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries untuk Responsivitas */
+@media(max-width: 768px) {
+    .card-container {
+        width: 100%; /* Lebar penuh di mobile */
+        padding: 10px; /* Sesuaikan padding */
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 10px); /* 2 kartu per baris di tablet */
+        max-width: calc(50% - 10px);
+    }
+
+    .card img {
+        height: 200px; /* Sesuaikan tinggi untuk layar lebih kecil */
+    }
+
+    .card h3 {
+        font-size: 1.2rem; /* Ukuran font lebih kecil untuk judul */
+        padding: 0 10px; /* Tambahkan padding untuk mencegah overflow */
+    }
+
+    .card p {
+        font-size: 0.9rem; /* Ukuran font lebih kecil untuk paragraf */
+        padding: 0 10px; /* Tambahkan padding untuk mencegah overflow */
+    }
+}
+
+@media(max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* 1 kartu per baris di mobile */
+        max-width: 100%;
+    }
+
+    .card img {
+        width: 100%;  /* Lebar gambar mengisi seluruh lebar kartu */
+        height: 350px; /* Tinggi gambar tetap diatur sama */
+        object-fit: cover; /* Memastikan gambar tetap proporsional tanpa distorsi */
+    }
+
+    .card h3 {
+        font-size: 4vw; /* Ukuran font proporsional terhadap lebar layar */
+        padding: 0 5px; /* Tambahkan padding untuk mencegah overflow */
+    }
+
+    .card p {
+        font-size: 3vw; /* Ukuran font proporsional untuk paragraf */
+        padding: 0 5px; /* Tambahkan padding untuk mencegah overflow */
+    }
+}
+
+
+
+
+
+.card-containerr {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardd {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: auto;
+}
+
+.cardd img {
+    width: 300px;
+    height: auto;
+}
+
+.cardd:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .cardd {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+}
+.elementor-3292 .elementor-element.elementor-element-c05008e:not(.elementor-motion-effects-element-type-background),
+.elementor-3292 .elementor-element.elementor-element-c05008e>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background-color: #00286B;
+}
+
+.elementor-3292 .elementor-element.elementor-element-c05008e {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 0% 0% 20% 0%;
+}
+
+.elementor-3292 .elementor-element.elementor-element-cf9e410 .elementor-button {
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #00286B;
+}
+
+.elementor-3292 .elementor-element.elementor-element-8b9e342>.elementor-container {
+    max-width: 921px;
+}
+
+.elementor-3292 .elementor-element.elementor-element-2bf34ca>.elementor-container {
+    min-height: 384px;
+}
+
+.elementor-3292 .elementor-element.elementor-element-2bf34ca:not(.elementor-motion-effects-element-type-background),
+.elementor-3292 .elementor-element.elementor-element-2bf34ca>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background-color: #FfFFFF;
+    height: 530px;
+}
+
+.elementor-3292 .elementor-element.elementor-element-2bf34ca {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: -23%;
+    margin-bottom: 0%;
+}
+
+.elementor-3292 .elementor-element.elementor-element-0c9a930.elementor-column.elementor-element[data-element_type="column"]>.elementor-widget-wrap.elementor-element-populated {
+    align-content: center;
+    align-items: center;
+}
+
+.elementor-3292 .elementor-element.elementor-element-0c9a930>.elementor-element-populated {
+    margin: 0px 0px 0px 40px;
+    --e-column-margin-right: 0px;
+    --e-column-margin-left: 40px;
+}
+
+.elementor-3292 .elementor-element.elementor-element-750ad86 .elementor-heading-title {
+    color: #414141;
+    font-family: "Nunito", Sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.elementor-3292 .elementor-element.elementor-element-6215d8b .elementor-heading-title {
+    color: #414141;
+    font-family: "Nunito", Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.elementor-bc-flex-widget .elementor-3292 .elementor-element.elementor-element-5a68090.elementor-column .elementor-widget-wrap {
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .elementor-3292 .elementor-element.elementor-element-2bf34ca:not(.elementor-motion-effects-element-type-background),
+    .elementor-3292 .elementor-element.elementor-element-2bf34ca>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+        height: auto;
+        margin-top: 0;
+    }
+
+
+    .elementor-3292 .elementor-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .elementor-3292 .elementor-element .elementor-heading-title {
+            font-size: 24px;
+        }
+
+
+        .elementor-3292 .elementor-element .elementor-heading-title.elementor-size-default {
+            font-size: 16px;
+            line-height: 1.4em;
+            text-align: justify;
+        }
+
+
+        .elementor-3292 .elementor-element.elementor-element-0c9a930>.elementor-element-populated {
+            margin: 0 20px;
+        }
+
+        .elementor-3292 .elementor-element.elementor-element-5a68090 {
+            text-align: center;
+        }
+
+
+        .elementor-3292 .elementor-counter .elementor-counter-number {
+            font-size: 28px;
+        }
+
+        .elementor-3292 .elementor-element.elementor-element-2bf34ca {
+            margin-bottom: 20px;
+        }
+    }
+    
+
+
+    .elementor-3292 .elementor-element.elementor-element-5a68090.elementor-column.elementor-element[data-element_type="column"]>.elementor-widget-wrap.elementor-element-populated {
+        align-content: center;
+        align-items: center;
+    }
+
+    .elementor-3292 .elementor-element.elementor-element-bcd621b .elementor-counter-number-wrapper {
+        color: #1E1E1E;
+        font-family: "Nunito", Sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 0.9em;
+        margin-top: 100px;
+    }
+
+    .elementor-3292 .elementor-element.elementor-element-bcd621b .elementor-counter-title {
+        color: #757373;
+        font-family: "Nunito", Sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 0.1em;
+    }
+
+    .elementor-3292 .elementor-element.elementor-element-bcd621b.bdt-background-overlay-yes>.elementor-widget-container:before {
+        transition: background 0.3s;
+    }
+
+    .elementor-3292 .elementor-element.elementor-element-0525500 .elementor-counter-number-wrapper {
+        color: #1E1E1E;
+        font-family: "Nunito", Sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 0.9em;
+    }
+
+    .elementor-3292 .elementor-element.elementor-element-0525500 .elementor-counter-title {
+        color: #757373;
+        font-family: "Nunito", Sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 0.1em;
+    }
+
+    .elementor-3292 .elementor-element.elementor-element-d0761db .elementor-counter-number-wrapper {
+        color: #1E1E1E;
+        font-family: "Nunito", Sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 0.9em;
+    }
+
+    .elementor-3292 .elementor-element.elementor-element-d0761db .elementor-counter-title {
+        color: #757373;
+        font-family: "Nunito", Sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 0.1em;
+    }
+
+    .elementor-3292 .elementor-element.elementor-element-dec3483 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+
+
+
+.elementor-3292 .elementor-element.elementor-element-7bd8c94 .elementor-divider-separator {
+    width: 45%;
+    margin: 0 auto;
+    margin-center: 0;
+}
+
+.elementor-3292 .elementor-element.elementor-element-7bd8c94 .elementor-divider {
+    text-align: center;
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+}
+
+.elementor-3292 .elementor-element.elementor-element-7bd8c94 .elementor-divider__text {
+    color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.elementor-3292 .elementor-element.elementor-element-0a0e041 {
+    text-align: center;
+}
+
+.elementor-3292 .elementor-element.elementor-element-0a0e041 .elementor-heading-title {
+    color: #ffffff;
+    font-family: "Nunito", Sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+@media(max-width:767px) {}
+
+
+.elementor-3294 .elementor-element.elementor-element-f648096:not(.elementor-motion-effects-element-type-background),
+.elementor-3294 .elementor-element.elementor-element-f648096>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background-color: #00286B;
+}
+
+.elementor-3294 .elementor-element.elementor-element-f648096 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 10px 0px 10px 0px;
+}
+
+.elementor-3294 .elementor-element.elementor-element-dd36b31 .elementor-image img {
+    width: 15%;
+    max-width: 62%;
+}
